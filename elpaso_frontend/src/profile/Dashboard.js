@@ -219,7 +219,7 @@ function Dashboard(props) {
 
     if (isMounted.current && props.value != null) {
       console.log("Will submit data..");
-      fetch("http://localhost:8000/app/dashboard", {
+      fetch("https://elpaso.zapto.org/app/dashboard", {
         method: "POST",
         body: JSON.stringify(props.value),
         headers: {

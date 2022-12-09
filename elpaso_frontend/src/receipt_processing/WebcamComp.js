@@ -57,7 +57,7 @@ function WebcamComp() {
       e.preventDefault(); // prevent form from refreshing
       // try {
       console.log("User token that sometimes is null: " + userToken);
-      fetch("http://localhost:8000/app/capture", {
+      fetch("https://elpaso.zapto.org/app/capture", {
         method: "POST",
         body: JSON.stringify({ photo: image }),
         headers: {

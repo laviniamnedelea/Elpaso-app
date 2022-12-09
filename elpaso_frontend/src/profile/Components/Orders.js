@@ -18,7 +18,7 @@ export default function Orders(props) {
   const deleteEntry = (id) => {
     console.log(id);
     console.log("ceva");
-    fetch("http://localhost:8000/app/general_dashboard", {
+    fetch("https://elpaso.zapto.org/app/general_dashboard", {
       method: "POST",
       body: JSON.stringify([value, "", "", "", id]),
       headers: {

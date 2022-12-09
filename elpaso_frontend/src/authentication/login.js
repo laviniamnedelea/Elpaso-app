@@ -50,7 +50,7 @@ const Login = () => {
       // console.log("Token is: " + tok);
       localStorage.setItem("token", JSON.stringify(tok));
 
-      fetch("http://localhost:8000/app/login", {
+      fetch("https://elpaso.zapto.org/app/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

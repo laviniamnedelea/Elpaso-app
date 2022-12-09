@@ -38,7 +38,7 @@ const Crop = () => {
       // try {
       console.log("User token that sometimes is null: " + userToken);
       console.log("LOADINGGGGGGGGG    " + loading);
-      fetch("http://localhost:8000/app/capture", {
+      fetch("https://elpaso.zapto.org/app/capture", {
         method: "POST",
         body: JSON.stringify({ photo: croppedImage }),
         headers: {

@@ -56,7 +56,7 @@ const Signin = () => {
               auth.currentUser.getIdToken(true).then((token) => {
                 localStorage.setItem("token", JSON.stringify(token));
                 setUserToken(token);
-                fetch("http://localhost:8000/app/register", {
+                fetch("https://elpaso.zapto.org/app/register", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",

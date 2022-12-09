@@ -153,7 +153,7 @@ export default function GeneralDashboard() {
   ];
   useEffect(() => {
     console.log(value);
-    fetch("http://localhost:8000/app/general_dashboard", {
+    fetch("https://elpaso.zapto.org/app/general_dashboard", {
       method: "POST",
       body: JSON.stringify([value, "", "", "", ""]),
       headers: {
@@ -211,7 +211,7 @@ export default function GeneralDashboard() {
     let luna = document.getElementById("luna").value;
     let an = document.getElementById("an").value;
 
-    fetch("http://localhost:8000/app/general_dashboard", {
+    fetch("https://elpaso.zapto.org/app/general_dashboard", {
       method: "POST",
       body: JSON.stringify([value, zi, luna, an, ""]),
       headers: {

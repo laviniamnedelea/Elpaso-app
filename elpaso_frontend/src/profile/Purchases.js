@@ -31,7 +31,7 @@ function Purchases() {
 
   useEffect(() => {
     if (value != null)
-      fetch("http://localhost:8000/app/general_dashboard", {
+      fetch("https://elpaso.zapto.org/app/general_dashboard", {
         method: "POST",
         body: JSON.stringify([value, "", "", "", ""]),
         headers: {

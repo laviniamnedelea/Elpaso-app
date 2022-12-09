@@ -1,14 +1,14 @@
 version: "3.3"
 services:
   web:
-    image: lavned/elpaso_web:1.2
+    image: lavned/elpaso_web:1.0.53
     command: >
       bash -c "python manage.py migrate && 
       python manage.py runserver 0.0.0.0:8000"
     env_file:
       - .env.dev
     deploy:
-      replicas: 1
+      replicas: 2
       restart_policy:
         condition: on-failure
       update_config:
@@ -44,7 +44,7 @@ services:
       retries: 5
 
   frontend:
-    image: lavned/elpaso_frontend:1.2
+    image: lavned/elpaso_frontend:1.0.66.3
     networks:
       - web_network
     env_file: .env.local
@@ -59,7 +59,7 @@ services:
       interval: 180s
       retries: 5
       timeout: 10s
-
+      
   nginx:
     image: nginx:stable-alpine
     deploy:
@@ -79,7 +79,8 @@ services:
       - 443:443
     networks:
       - web_network
-
+      - data_network
+      
   sematext:
     image: sematext/agent:latest
     env_file:

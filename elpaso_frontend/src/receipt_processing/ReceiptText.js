@@ -54,7 +54,7 @@ function ReceiptText(props) {
       // console.log(formFields);
       console.log("Will submit data..");
       setLoading(true);
-      fetch("http://localhost:8000/app/receipt", {
+      fetch("https://elpaso.zapto.org/app/receipt", {
         method: "POST",
         body: JSON.stringify([formFields, date]),
         headers: {
