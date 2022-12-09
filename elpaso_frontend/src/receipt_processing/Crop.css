@@ -1,0 +1,242 @@
+.crop-container {
+  display: flex;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .just-crop-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    grid-gap: 10px;
+    gap: 10px;
+  }
+  .crop-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .crop-image {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-self: center;
+  }
+  .receipt-button-crop {
+    width: 90px;
+    height: 50px;
+    font-size: 11px;
+    font-weight: 500;
+    transition: all 0.2s ease 0s;
+    color: rgb(70, 70, 70);
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .crop-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .crop-image {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .receipt-button-crop {
+    width: 150px;
+    height: 90px;
+    margin: 8%;
+    font-size: 11px;
+    font-weight: 500;
+    transition: all 0.2s ease 0s;
+    color: rgb(70, 70, 70);
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.receipt-button-crop:hover {
+  box-shadow: 0px 15px 20px rgba(46, 156, 229, 0.336);
+  color: rgba(70, 70, 70, 0.664);
+  transform: translateY(-7px);
+  background-color: #49c3d87e;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(56, 54, 54, 0.287);
+  height: 100%;
+  width: 100%;
+}
+.wrap:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.wrap {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: Arial;
+  height: 100%;
+}
+.center {
+  display: inline-block;
+  vertical-align: middle;
+}
+.document-loader {
+  display: inline-block;
+  min-width: 200px;
+  min-height: 250px;
+  position: relative;
+  padding: 5px;
+  border-radius: 4px;
+  background: #f7bc57;
+  animation: slideInOut 3s ease infinite;
+}
+.document-loader:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom-left-radius: 2px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #4c4c4c #4c4c4c rgba(255, 255, 255, 0.35)
+    rgba(255, 255, 255, 0.35);
+  border-bottom-left-radius: 4px;
+  border-width: 16px;
+}
+.document-loader .heading {
+  display: block;
+  height: 8px;
+  background: #333;
+  width: 0px;
+  margin-bottom: 1px;
+  margin-top: 5px;
+  animation: growHeading 3s linear infinite;
+}
+.document-loader .heading.short {
+  animation: growHeadingShort 3s linear infinite;
+}
+.document-loader .heading:first-child {
+  margin-top: 0px;
+}
+.document-loader .line {
+  display: block;
+  margin: 3px 0 0px 0;
+  background: #eee;
+  height: 6px;
+  width: 7px;
+  animation: growLine 3s linear infinite;
+}
+.document-loader .line.short {
+  margin-bottom: 3px;
+  animation: growLineShort 3s linear infinite;
+}
+
+@keyframes slideInOut {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(-5%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(5%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes growHeading {
+  0% {
+    width: 0px;
+  }
+  60% {
+    width: 0;
+  }
+  70% {
+    width: 85px;
+  }
+  100% {
+    width: 90px;
+  }
+}
+
+@keyframes growHeadingShort {
+  0% {
+    width: 0px;
+  }
+  30% {
+    width: 0;
+  }
+  40% {
+    width: 75px;
+  }
+  100% {
+    width: 95px;
+  }
+}
+
+@keyframes growLine {
+  0% {
+    width: 0px;
+  }
+  60% {
+    width: 0px;
+  }
+  80% {
+    width: 80px;
+  }
+  100% {
+    width: 120px;
+  }
+}
+
+@keyframes growLineShort {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  60% {
+    width: 70px;
+  }
+  100% {
+    width: 75px;
+  }
+}

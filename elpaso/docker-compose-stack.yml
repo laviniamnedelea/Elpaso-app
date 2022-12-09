@@ -1,0 +1,116 @@
+version: "3.3"
+services:
+  web:
+    image: lavned/elpaso_web:1.0.57
+    command: >
+      bash -c "python manage.py migrate && 
+      python manage.py runserver 0.0.0.0:8000"
+    env_file:
+      - .env.dev
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+      update_config:
+        parallelism: 2
+    networks:
+      - web_network
+      - data_network
+    secrets:
+      - firebase_secret
+      - google_cloud_secret
+    healthcheck:
+      test: wget --tries=1 --spider http://localhost:8000/app/ || exit 1
+      interval: 180s
+      retries: 5
+      timeout: 10s
+
+  db:
+    image: postgres:11
+    command: "-c logging_collector=on"
+    volumes:
+      - /mnt/postgres_data/:/var/lib/postgresql/data/
+    env_file:
+      - .env.database.dev
+    networks:
+      - data_network
+    deploy:
+      restart_policy:
+        condition: any
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    image: lavned/elpaso_frontend:1.0.77
+    networks:
+      - web_network
+    env_file: .env.local
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: any
+      update_config:
+        parallelism: 2
+    healthcheck:
+      test: wget --tries=1 --spider http://localhost:3000/ || exit 1
+      interval: 180s
+      retries: 5
+      timeout: 10s
+
+  nginx:
+    image: nginx:stable-alpine
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+      restart_policy:
+        condition: on-failure
+        delay: 120s
+        max_attempts: 10
+    volumes:
+      - ./reverse_proxy/nginx.conf:/etc/nginx/nginx.conf
+      - /etc/letsencrypt:/etc/letsencrypt
+      - /usr/share/nginx/html:/usr/share/nginx/html
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - web_network
+
+  sematext:
+    image: sematext/agent:latest
+    env_file:
+      - .env.sematext.dev
+    cap_add:
+      - SYS_ADMIN
+    networks:
+      - web_network
+      - data_network
+    deploy:
+      mode: global
+      restart_policy:
+        condition: any
+    volumes:
+      - /:/hostfs:ro
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro
+      - /var/run/:/var/run
+      - /sys/kernel/debug:/sys/kernel/debug
+      - /sys:/host/sys:ro
+      - /dev:/hostfs/dev:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+secrets:
+  firebase_secret:
+    file: ./firebase-config.json
+  google_cloud_secret:
+    file: ./Google_Cloud_credentials.json
+
+networks:
+  web_network:
+    driver: overlay
+  data_network:
+    driver: overlay

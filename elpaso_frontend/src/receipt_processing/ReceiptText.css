@@ -1,0 +1,300 @@
+.pseudo {
+  position: relative;
+}
+
+.pseudo:before {
+  content: "";
+  position: absolute;
+  width: 96%;
+  top: 5px;
+  left: 2%;
+  border-bottom: 1px dashed #000;
+}
+
+.panel-dark {
+  border-color: #e9e9e9;
+  box-shadow: 0 5px 15px #ccc;
+  background: url(https://wallpaperaccess.com/full/2578748.jpg);
+}
+
+.pseudo:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 10px;
+  bottom: -10px;
+  left: 0;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0) 33.333%,
+      #e9e9e9 33.333%,
+      #f7f7f7 66.667%,
+      rgba(0, 0, 0, 0) 66.667%
+    ),
+    linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0) 33.333%,
+      #e9e9e9 33.333%,
+      #f7f7f7 66.667%,
+      rgba(0, 0, 0, 0) 66.667%
+    );
+  background-size: 20px 40px;
+  background-position: 50% -30px;
+  background-repeat: repeat-x;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .container-print {
+    padding: 0;
+    width: 40%;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-print {
+    padding: 0;
+    width: 95%;
+    align-self: center;
+  }
+}
+
+@keyframes shake-it-baby {
+  0% {
+    height: 0px;
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+  10% {
+    height: 200px;
+    transform: translate(0.5px, -0.5px) rotate(0.5deg);
+  }
+  20% {
+    height: 400px;
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+  30% {
+    height: 600px;
+    transform: translate(0.5px, -0.5px) rotate(-0.5deg);
+  }
+  40% {
+    height: 800px;
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+  50% {
+    height: 1000px;
+    transform: translate(0.5px, -0.5px) rotate(0.5deg);
+  }
+  60% {
+    height: 1200px;
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+  70% {
+    height: 1500px;
+    transform: translate(0.5px, -0.5px) rotate(0.5deg);
+  }
+  80% {
+    height: 1600px;
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+  90% {
+    height: 1700px;
+    transform: translate(0.5px, -0.5px) rotate(-0.5deg);
+  }
+  100% {
+    height: 1800px;
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+}
+
+.container-print .panel-body {
+  animation: shake-it-baby 2s;
+  overflow: hidden;
+}
+
+.container-receipt-text {
+  display: flex;
+  height: 100%;
+}
+
+.receipt {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 70vh;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.tab {
+  width: 70%;
+  margin: 0 auto;
+  height: 30px;
+  margin-bottom: -5px;
+  background-color: rgb(255 255 255 / 85%);
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tab {
+    width: 100%;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: -5px;
+    background-color: rgb(255 255 255 / 85%);
+    box-shadow: inset 0 0 35px #ddd;
+    border-radius: 50px;
+  }
+}
+
+.upper-bar-receipt {
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .upper-bar-receipt {
+    margin-top: 15%;
+  }
+}
+
+.receiptInput-all-screens {
+  border: none;
+  font-family: monospaced sans serif;
+  background-color: #e9e9e9;
+  color: #414242;
+}
+
+.receiptInput {
+  margin-left: 20%;
+  width: 60%;
+  margin-right: 20%;
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (max-width: 600px) {
+  .receiptInput {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10%;
+    width: 80%;
+    margin-right: 10%;
+    font-size: medium;
+  }
+}
+
+.close-button {
+  margin-left: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+  .receipt-button {
+    width: 70px;
+    height: 40px;
+    font-size: 11px;
+    font-weight: 500;
+    transition: all 0.2s ease 0s;
+    color: rgb(70, 70, 70);
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: none;
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .receipt-button {
+    width: 80px;
+    height: 50px;
+    font-size: 11px;
+    font-weight: 500;
+    transition: all 0.2s ease 0s;
+    color: rgb(70, 70, 70);
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: none;
+    margin-left: 5%;
+  }
+}
+
+.receipt-button:hover {
+  box-shadow: 0px 15px 20px rgba(46, 156, 229, 0.336);
+  color: rgba(70, 70, 70, 0.664);
+  transform: translateY(-7px);
+  background-color: #49c3d87e;
+}
+
+.add {
+  margin-left: 55%;
+}
+
+@media only screen and (max-width: 600px) {
+  .add {
+    margin-left: 20%;
+  }
+}
+.button_plus {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 400px;
+  background: rgba(255, 255, 255, 0.11);
+  cursor: pointer;
+  border: 2px solid #9e9b9b;
+  top: 70%;
+}
+
+.button_plus:after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 4px;
+  width: 50%;
+  background: #aca7ad;
+}
+
+.button_plus:before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: #aca7ad;
+  height: 50%;
+  width: 4px;
+}
+
+.button_plus:hover:before,
+.button_plus:hover:after {
+  background: #fff;
+  transition: 0.2s;
+}
+
+.button_plus:hover {
+  background-color: #606263;
+  transition: 0.2s;
+}
+
+.button-receipt:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 5px solid #6e42c176;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

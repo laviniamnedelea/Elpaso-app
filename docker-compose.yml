@@ -1,0 +1,77 @@
+version: "3.3"
+services:
+  web:
+    build:
+      context: ./elpaso/
+      dockerfile: Dockerfile
+    command: >
+      bash -c "python manage.py makemigrations &&
+      python manage.py migrate &&
+      ./docker_migrate.sh &&
+      python manage.py runserver 0.0.0.0:8000"
+    env_file:
+      - .env.dev
+    volumes:
+      - ./api/migrations:/elpaso/buffer_migrations
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    restart: always
+    networks:
+      - web_network
+      - data_network
+    secrets:
+      - firebase_secret
+      - google_cloud_secret
+
+  db:
+    image: postgres:11
+    ports:
+      - "5432:5432"
+    volumes:
+      - /mnt/postgres_data/:/var/lib/postgresql/data/
+    env_file:
+      - .env.database.dev
+    networks:
+      - data_network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - "5051:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: root
+    restart: always
+    networks:
+      - data_network
+    logging:
+      driver: none
+
+  frontend:
+    restart: always
+    depends_on:
+      - web
+    build:
+      context: ./elpaso_frontend/
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    networks:
+      - web_network
+    env_file:
+      - .env.local
+
+networks:
+  data_network:
+    driver: bridge
+  web_network:
+    driver: bridge
+
+secrets:
+  firebase_secret:
+    file: ./firebase-config.json
+  google_cloud_secret:
+    file: ./Google_Cloud_credentials.json

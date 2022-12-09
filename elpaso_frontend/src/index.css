@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  background-color: #8a79ad7e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  /*background for app */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+
+.navbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  font-family: "Quicksand";
+  color: rgb(216, 208, 208);
+}
+.navbar h1 {
+  color: #7fbfd3;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 6px;
+  color: rgb(216, 208, 208);
+}
+.navbar a:hover {
+  color: #35c5f1;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.cameraButton {
+  font-size: 15px;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 7px 88px;
+  color: rgb(3, 3, 3);
+  background-color: #f7f7f7;
+  height: 48px;
+  position: absolute;
+  left: -50px;
+  cursor: pointer;
+}

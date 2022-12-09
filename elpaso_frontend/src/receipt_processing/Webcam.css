@@ -1,0 +1,36 @@
+.webcam {
+  width: 100%;
+}
+
+.button {
+  position: absolute;
+}
+
+.button.snap-button {
+  left: 20%;
+  top: 80%;
+}
+
+.button.switch-button {
+  left: 60%;
+  top: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+  .button.switch-button {
+    font-size: 0.5rem;
+    width: 10%;
+    padding: 0;
+  }
+
+  .button.snap-button {
+    font-size: 0.5rem;
+    width: 10%;
+    padding: 0;
+  }
+}
+
+.button.confirm-button {
+  left: 20%;
+  top: 50%;
+}

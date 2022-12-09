@@ -1,0 +1,68 @@
+.photo-selector-container {
+  display: flex;
+  height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .receipt-image:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.2);
+  }
+  .receipt-image {
+    height: 80%;
+    width: 100%;
+    margin-top: 20%;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all 0.8s ease-in-out;
+  }
+  .button-item-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .button-item {
+    z-index: 1;
+    margin: 0 auto;
+    display: flex;
+
+    /* 0 sus jos auto stanga dreapta */
+    /* ca sa l puna peste particle punem, z-index */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .receipt-image:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+  }
+  .receipt-image {
+    width: 100%;
+    /* margin-top: 31%; */
+    align-self: center;
+    max-height: 600px;
+  }
+  .button-item-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 10px;
+    justify-content: center;
+    height: 90%;
+  }
+
+  .button-item {
+    z-index: 1;
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    /* 0 sus jos auto stanga dreapta */
+    /* ca sa l puna peste particle punem, z-index */
+  }
+}

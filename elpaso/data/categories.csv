@@ -1,0 +1,607 @@
+"Detergent            ",Curatenie
+"Broccoli             ",Legume
+"Iaurt                ",Lactate
+"Ketchup              ",Alimente
+"ou                   ",Alimente
+"piept pui            ",Alimente
+"Emmental             ",Lactate
+"Lapte                ",Lactate
+"Lapte cafea          ",Lactate
+"Crema branza         ",Lactate
+"Unt                  ",Lactate
+"Sunca                ",Alimente
+"Croissant            ",Fainoase
+"Croissant cu unt     ",Fainoase
+"Franzela             ",Fainoase
+"Paine                ",Fainoase
+"Banane               ",Fructe
+"Peroni               ",Tutun&Alcool
+"Cafea                ",Bauturi
+"Cidru                ",Tutun&Alcool
+"Muschi file          ",Alimente
+"Piept file           ",Alimente
+"Peste file           ",Alimente
+"Somon file           ",Alimente
+"Ton                  ",Alimente
+"Tortitzi             ",Alimente
+"Popcorn              ",Alimente
+"Apa                  ",Bauturi
+"Apa zizin            ",Bauturi
+"Aqua Carpatica       ",Bauturi
+"Apa Bucovina         ",Bauturi
+"Linte                ",Legume
+"Porumb               ",Alimente
+"Salata               ",Legume
+"Salata verde         ",Legume
+"Aripi                ",Alimente
+"Toast                ",Alimente
+"fructe               ",Alimente
+"Pasta de dinti       ",Igiena
+"Prosop               ",Curatenie
+"Masline              ",Alimente
+"Chipsuri             ",Alimente
+"ciocolata            ",Alimente
+"Laveta               ",Curatenie
+"icre                 ",Alimente
+"Cantar               ",Instrumente
+"Caju                 ",Alimente
+"Sticksuri pisici     ",Hrana_animale
+"Hrana pisici         ",Hrana_animale
+"Pernute pisici       ",Hrana_animale
+"pisici               ",Hrana_animale
+"Kitekat              ",Hrana_animale
+"sandwich             ",Alimente
+"aripi pui            ",Alimente
+"baton fructe         ",Alimente
+"Popcorn unt          ",Alimente
+"agenda               ",Papetarie
+"caiet                ",Papetarie
+"pix                  ",Papetarie
+"pixuri               ",Papetarie
+"creioane             ",Papetarie
+"faina                ",Produse_de_baza
+"branza               ",Lactate
+"foietaj              ",Alimente
+"salata               ",Alimente
+"icre                 ",Alimente
+"Servetele            ",Igiena
+"Mandarine            ",Fructe
+"Portocale            ",Fructe
+"Clementine           ",Fructe
+"Castraveti           ",Fructe
+"Rosii                ",Legume
+"Ananas               ",Fructe
+"Avocado              ",Fructe
+"Ardei                ",Legume
+"Ardei capia          ",Legume
+"Ardei gras           ",Legume
+"Fasole               ",Legume
+"Usturoi              ",Legume
+"Morcovi              ",Legume
+"Conopida             ",Legume
+"Dovlecel             ",Legume
+"Dovleac              ",Legume
+"Castraveti           ",Legume
+"Ceapa                ",Legume
+"Rucola               ",Legume
+"Cartofi              ",Legume
+"Hrean                ",Legume
+"Marar                ",Legume
+"Patrunjel            ",Legume
+"Spanac               ",Legume
+"Varza                ",Legume
+"Stevie               ",Legume
+"Vanata               ",Legume
+"Naut                 ",Legume
+"Linte                ",Legume
+"Soia                 ",Legume
+"Gulie                ",Legume
+"telina               ",Legume
+"sparanghel           ",Legume
+"ridichi              ",Legume
+"sfecla               ",Legume
+"ghimbir              ",Fructe
+"anghinare            ",Legume
+"mazare               ",Legume
+"mar                  ",Fructe
+"mere                 ",Fructe
+"afine                ",Fructe
+"ananas               ",Fructe
+"mandarine            ",Fructe
+"portocale            ",Fructe
+"clementine           ",Fructe
+"gref                 ",Fructe
+"grepfruit            ",Fructe
+"pomelo               ",Fructe
+"lamai                ",Fructe
+"lime                 ",Fructe
+"cirese               ",Fructe
+"pepene               ",Fructe
+"kiwi                 ",Fructe
+"zmeura               ",Fructe
+"mure                 ",Fructe
+"fragute              ",Fructe
+"coacaze              ",Fructe
+"fructul pasiunii     ",Fructe
+"mango                ",Fructe
+"struguri             ",Fructe
+"grapefruit           ",Fructe
+"rodie                ",Fructe
+"rodii                ",Fructe
+"capsuni              ",Fructe
+"papaya               ",Fructe
+"limes                ",Fructe
+"nuca de cocos        ",Fructe
+"physalis             ",Fructe
+"piersici             ",Fructe
+"kumquats             ",Fructe
+"caise                ",Fructe
+"dude                 ",Fructe
+"gutui				 ",Fructe
+"prune                ",Fructe
+"smochine             ",Fructe
+"visine               ",Fructe
+"zarzare              ",Fructe
+"hartie igienica      ",Igiena
+"hartie copt          ",Bucatarie
+"condimente           ",Produse_de_baza
+"cutit                ",Bucatarie
+"furculite            ",Bucatarie
+"set tacamuri         ",Bucatarie
+"pahar                ",Bucatarie
+"cana                 ",Bucatarie
+"farfurie             ",Bucatarie
+"linguri              ",Bucatarie
+"igienica             ",Igiena
+"oua                  ",Alimente
+"albus                ",Alimente
+"crenwursti           ",Alimente
+"sacosa               ",Diverse
+"punga                ",Diverse
+"cereale              ",Alimente
+"grisine              ",Alimente
+"biscuiti             ",Alimente
+"sushi                ",Alimente
+"chia                 ",Alimente
+"ton                  ",Alimente
+"pungute              ",Diverse
+"pungi                ",Diverse
+"tigari               ",Tutun&Alcool
+"cigarette            ",Tutun&Alcool
+"bere                 ",Tutun&Alcool
+"gin                  ",Tutun&Alcool
+"vin                  ",Tutun&Alcool
+"vodka                ",Tutun&Alcool
+"cocktail             ",Tutun&Alcool
+"hugo                 ",Tutun&Alcool
+"cidru                ",Tutun&Alcool
+"faina alba           ",Alimente
+"faina                ",Alimente
+"guma                 ",Alimente
+"bucovina             ",Bauturi
+"snack                ",Alimente
+"chio                 ",Alimente
+"humus                ",Alimente
+"inghetata            ",Alimente
+"smoothie             ",Bauturi
+"prosop hartie        ",Bucatarie
+"lasagna              ",Alimente
+"budinca              ",Alimente
+"sampon               ",Igiena
+"sapun ",Igiena
+"balsam ",Igiena
+"pasta de dinti ",Igiena
+"deodorant ",Igiena
+"gel de dus ",Igiena
+"scrub ",Igiena
+masca de fata,Cosmetice
+ruj,Cosmetice
+creion de buze,Cosmetice
+tortilla,Fainoase
+"Fond de ten ",Cosmetice
+castraveti,Legume
+tortilla,Fainoase
+strudel,Fainoase
+mozzarella,Lactate
+Rosii cocktail,Legume
+Branzica,Lactate
+Demachiant,Cosmetice
+Forfecuta,Cosmetice
+Absorbante,Cosmetice
+Deodorant,Cosmetice
+Ulei,Produse_de_baza
+Faina,Produse_de_baza
+Zahar,Produse_de_baza
+Sare,Produse_de_baza
+Orez,Produse_de_baza
+ovaz,Produse_de_baza
+cous cous,Produse_de_baza
+Cafea,Alimente
+Gris,Produse_de_baza
+Drojdie,Produse_de_baza
+Conserva,Alimente
+Otet,Produse_de_baza
+Crema de alune,Alimente
+Pate,Alimente
+Prosoape de hartie,Curatenie
+Solutie de covor,Curatenie
+Spray geamuri,Curatenie
+Spray mobila,Curatenie
+Mop,Curatenie
+Matura,Curatenie
+Paste,Fainoase
+Eugenie,Alimente
+Pate,Alimente
+Croissant,Alimente
+Covrigi,Fainoase
+vopsea par ,cosmetice
+vopsea, Diverse
+perie par ,cosmetice
+perie maner,instrumente
+apa minerala,Bauturi
+lapte proteic ,Lactate
+iaurt natur, Lactate
+balsam de rufe, Curatenie
+detergent de ruge, Curatenie
+curatenie, curatenie
+Branzica proaspata,Lactate
+praf de copt,Bucatarie
+bautura lapte, Lactate
+cacao pudra, Bucatarie
+pijama, Haine
+sosete, Haine
+pantaloni, Haine
+set sosete, Haine
+Tortilla, Fainoase
+Wraps, Fainoase
+placinta,Alimente
+fasole rosie, Legume
+punga maieu, Diverse
+schweppes, Bauturi
+sunca de pui,Alimente
+sunca de porc,Alimente
+Lapte fara lactoza,Lactate
+Crenwursti,Alimente
+curcan,Alimente
+cordon bleu,Alimente
+Orbit,Diverse
+Vin,Tutun&Alcool
+Jambon,Alimente
+Somon file,Alimente
+cascaval, Lactate
+cascaval felii, Lactate
+saci menajeri, Curatenie
+fulgi de ovaz, Alimente
+pernute cacao, Alimente,
+baton proteic, Alimente
+vin rosu, Tutun&Alcool
+vin alb, Tutun&Alcool
+cafea macinata, Bauturi
+suc, Bauturi
+suc portocale, Bauturi
+suc natural, Bauturi 
+ceai, Bauturi
+cappuccino, Bauturi
+flat white, Bauturi
+cafea boabe, Bauturi
+pastrama de pui, Alimente
+salam feliat, Alimente
+salam de sibiu, Alimente
+pate, Alimente
+kaizer, Alimente
+carnati semiafumati, Alimente
+salam victoria, Alimente
+sunca praga, Alimente
+piept de pui, Alimente
+pate de ficat de porc, Alimente
+pate de ficat de pui, Alimente
+ficat de pui, Alimente
+muschi tiganesc, Alimente
+crenvursti, Alimente
+cotlet de porc, Alimente
+carne tocata, Alimente
+iaurt de baut, Lactate
+branza cu smantana, Lactate
+unt, Lactate
+branza fagaras, Lactate
+smantana, Lactate
+lapte integral, Lactate
+branza topita, Lactate
+branza proaspata, Lactate
+crema de branza, Lactate
+cascaval afumat, Lactate
+telemea de vaca, Lactate
+mascarpone, Lactate
+lapte sana, Lactate
+oua cofrag, Alimente
+branza cottage, Lactate
+chefir din lapte, Lactate
+unt de masa, Lactate
+iaurt cu musli, Lactate
+iaurt cu fructe, Lactate
+malai, Produse_de_baza
+miere, Alimente
+dulceata, Alimente
+gem, Alimente
+unt de arahide, Alimente
+pulpa de rosii, Alimente
+ciuperci feliate, Alimente
+minge, Relaxare
+cort, Relaxare
+arc, Relaxare
+hamac, Relaxare
+umbrela de plaja, Relaxare
+prosop de plaja, Relaxare
+crema de soare, Sanatate
+pastile, Sanatate
+paracetamol, Sanatate
+dorada, Alimente
+creveti, Alimente
+hering, Alimente
+sardine, Alimente
+file de salau, Alimente
+file de pastrav, Alimente
+file pangasius, Alimente
+salata de icre, Alimente
+amandina, Alimente
+tort, Alimente
+ecler, Alimente
+branzoaica, Alimente
+foietaj, Alimente
+french Toast, Alimente
+lipie libaneza, Alimente
+dezinfectant solutie, Curatenie
+alcool sanitar, Sanatate
+Vata bumbac, cosmetice
+dischete demachiante, cosmetice
+balsam de buze, cosmetice
+plasturi, Sanatate
+pansament, Sanatate
+dopuri pentru urechi, Sanatate
+dezinfectant universal, Curatenie
+betisoare urcehi, Igiena
+detergent universal, Curatenie
+servetele antibacteriene, Igiena
+detergent lichid, Curatenie
+solutie pardoseli, Curatenie
+test antigen covid, Sanatate
+servetele umede, Curatenie
+servetele umede dezinfectante, Igiena
+servetele umede igienizante, Igiena
+plastura bataturi, Sanatate
+fasole batuta, Alimente
+pui cu taietei, Alimente
+salata de vinete, Alimente
+carne pentru chiftele, Alimente
+chiftele pui, Alimente
+piure de cartofi, Alimente
+fasole cu costita, Alimente
+humus natural, Alimente
+fasole cu carnaciori, Alimente
+chifla hamburger, Alimente
+ciabbata, Alimente
+rondele de paine, Alimente
+bicarbonat de sodiu, Produse_de_baza
+gelatina, Produse_de_baza
+zahar vanilat, Produse_de_baza
+esenta de rom, Produse_de_baza
+esenta de vanilie, Produse_de_baza
+sare de lamaie, Produse_de_baza
+budinca frisca, Produse_de_baza
+amoniu, Produse_de_baza
+budinca caramel, Alimente
+budinca vanilie, Alimente
+budinca ciocolata, Alimente
+piscoturi de ou, Alimente
+esenta migdale, Produse_de_baza
+esenta lamaie, Produse_de_baza
+ton maruntit, Alimente
+folie aluminiu, Bucatarie
+Biscuiti cereale, Alimente
+Grisine cu seminte, Alimente
+Iaurt high protein, Alimente
+Prosop de hartie, Bucatarie
+Prosop de bucatarie, Bucatarie
+cafea instant, Bauturi
+Linte verde, Legume
+periuta de dinti, Igiena
+ata dentara, Igiena
+pizza, Alimente
+nuggets, Alimente
+falafel, Alimente
+placinta, Alimente
+smoothie, Bauturi
+bautura din soia, Bauturi
+bautura migdale, Bauturi
+bautura cocos, Bauturi
+lapte cocos, Bauturi
+lapte soia, Bauturi
+lapte migdale, Bauturi
+lapte cocos, Bauturi
+bautura, Bauturi
+tofu simplu, Alimente
+tort, Alimente
+ardei iute, Produse_de_baza
+varza murata,Produse_de_baza
+castraveti murati, Alimente
+varza murata, Alimente
+compot, Alimente
+compot visine, Alimente
+compot ananas, Alimente
+compot piersici, Alimente
+compot prune, Alimente
+sampon wash and go, Igiena
+sampon, Igiena
+aparat de ras, Igiena
+fixativ, Cosmetice
+sapun lichid, Igiena
+vopsea de par permanenta, Cosmetice
+crema fata, Cosmetice
+crema corp, Cosmetice
+rezeva sapun, Igiena
+sampon pentru volum, Igiena
+sampon anticadere, Igiena
+mascara, Cosmetice
+fard de ochi, Cosmetice
+lac de unghii, Cosmetice
+liner, Cosmetice
+paleta de farduri, Cosmetice
+hulala frisca, Alimente
+smantana de gatit, Alimente
+smantana lichida, Alimente
+gel desfundat, Curatenie
+gel odorizant, Curatenie
+spray mobila, Curatenie
+pudra anticalcar, Curatenie
+spray multi suprafete, Curatenie
+solutie curatat geamuri, Curatenie
+detartrant WC, Curatenie
+detergent automat, Curatenie
+detergent universal spalari, Curatenie
+solutie antimucegai, Curatenie
+solutie parchet, Curatenie
+pudra anticalcar, Curatenie
+spray lichid, Curatenie
+odorizant solid toaleta, Curatenie
+detergent de vase, Curatenie
+aditiv spalare, Curatenie
+solutie aragaz, Curatenie
+laveta umeda, Curatenie
+laveta universala, Curatenie
+bureti, Curatenie
+bureti sarma, Curatenie
+detergent pasta vase, Curatenie
+batiste nazale, Igiena
+sampon covor, Curatenie
+servetele faciale, Igiena
+solutie curatat masina vase, Curatenie
+ceara pardoseli, Curatenie
+burete de bucatarie, Curatenie
+balsam de rufe, Curatenie
+inalbitor rufe, Curatenie
+servetele umede mobila, Curatenie
+gel anti-molii , Curatenie
+rezerva WC, Curatenie
+clor, Curatenie
+servetele mobila antistatice, Curatenie
+solutie gresie si faianta, Curatenie
+laveta uscata praf, Curatenie
+burete plastic, Curatenie
+granule desfundat, Curatenie
+solutie bucatarie, Curatenie
+anticalcar, Curatenie
+crema curatare, Curatenie
+solutie curatare, Curatenie
+gel rezerva, Curatenie
+spray rezerva, Curatenie
+solutie clatire, Curatenie
+praf curatare, Curatenie
+degresant, Curatenie
+pamatuf antipraf, Curatenie
+pamatuf, Curatenie
+spray gandaci si furnici, Curatenie
+saculeti antimolii, Curatenie
+burete teflon, Curatenie
+spray insecte, Curatenie
+solutie lentile, Curatenie
+servetele lentile, Curatenie
+inalbitor lichid, Curatenie
+spuma baie, Curatenie
+degresant bucatarie, Curatenie
+spray pete, Curatenie
+detergent de vase, Curatenie
+odorizant lichid, Curatenie
+servetele, Curatenie
+sare regeneranta masina vase, Curatenie
+inalbitor tablete, Curatenie
+ceai,Bauturi
+ceai granulat, Bauturi
+ceai verde,Bauturi
+ceai negru,Bauturi
+ceai musetel,Bauturi
+ceai fructe,Bauturi
+ceai menta,Bauturi
+cacao instant,Bauturi
+ceai antiadipos,Bauturi
+ceai soc,Bauturi
+ceai tei,Bauturi
+ceai sunatoare,Bauturi
+ciocolata calda,Bauturi
+ciocolata pudra,Bauturi
+paste, Produse_de_baza
+piper, Produse_de_baza
+foi de dafin,Produse_de_baza
+oregano, Produse_de_baza
+bautura instant cacao,Bauturi
+cafea solubila, Bauturi
+crema pudra cafea, Produse_de_baza
+boia de ardei, Produse_de_baza
+baton cereale, Alimente
+cafea decofeinizata, Bauturi
+cusioare,Produse_de_baza
+nucosare,Produse_de_baza
+usturoi granulat, Produse_de_baza
+gelatina alimentara, Produse_de_baza
+condimente carne, Produse_de_baza
+paste cu ou, Produse_de_baza
+cub gaina , Produse_de_baza
+cereale mic dejun, Alimente
+fulgi porumb, Alimente
+penne, Produse_de_baza
+mix de fructe, Alimente
+rosii pasate, Alimente
+macaraoane, Produse_de_baza
+penne cu ou, Produse_de_baza
+porumb dulce, Legume
+tagliatelle, Produse_de_baza
+taitei cu ou, Produse_de_baza
+ulei floarea soarelui, Produse_de_baza
+ulei de masline, Produse_de_baza
+boabe de naut, Legume
+spaghetti, Produse_de_baza
+rigatoni, Produse_de_baza
+capellini, Produse_de_baza
+ulei trufe, Produse_de_baza
+ton maruntit, Alimente
+ton maruntit ulei, Alimente
+ton maruntit suc, Alimente
+ton bucati, Alimente 
+scortisoare, Produse_de_baza
+piper macinat, Produse_de_baza
+fasole chili, Legume
+cuscus, Produse_de_baza
+sare iodata, Produse_de_baza
+zahar pudra, Produse_de_baza
+condimente carne de pui, Produse_de_baza
+condimente cartofi, Produse_de_baza
+ienibahar, Produse_de_baza
+praf trufe, Produse_de_baza
+condiment gratar, Produse_de_baza
+cimbru, Produse_de_baza
+condiment pui plic, Produse_de_baza
+condiment mititei, Produse_de_baza
+melci spiralati, Produse_de_baza
+condimente carne porc, Produse_de_baza
+carne pui, Alimente
+pulpe pui,Alimente
+copanele pui, Alimente
+piept de pui, Alimente
+cotlet porc, Alimente
+curry, Produse_de_baza
+condiment carne tocata, Produse_de_baza
+pesmet, Produse_de_baza
+faina de grau, Produse_de_baza
+taietei cuiburi, Produse_de_baza
+otet de mere, Produse_de_baza
+tarhon, Produse_de_baza
+busuioc, Produse_de_baza
+piper boabe, Produse_de_baza
+marar, Produse_de_baza
+patrunjel, Produse_de_baza
+varza rosie, Legume
+ardei kapia rosu, Legume
+ceapa galbena, Legume
+dovlecei, Legume
+mere iodared, Fructe
+salata verde, Legume
+ciuperci champignon, Legume

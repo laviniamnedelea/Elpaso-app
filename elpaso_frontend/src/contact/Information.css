@@ -1,0 +1,153 @@
+.information-container {
+  display: flex;
+  height: 100%;
+}
+
+.base_hov:hover .retract {
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(0.6);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(0.6);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(0.6);
+  transition: all 200ms ease-in;
+  transform: scale(0.6);
+}
+
+@media only screen and (max-width: 600px) {
+  .base_hov .retract {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform-origin: 50% 20%;
+    -webkit-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform-origin: 50% 20%;
+    -moz-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform-origin: 50% 20%;
+    -ms-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform-origin: 50% 20%;
+    transform: scale(1);
+    width: 200px;
+    height: 170px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+  }
+  .carre_couleur {
+    width: 90%;
+    height: 170px;
+    display: inline-block;
+    position: relative;
+  }
+  .information-optioins-container {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+  }
+  .fond {
+    position: absolute;
+    margin-top: 10%;
+  }
+  .acced {
+    width: 100%;
+    padding: 10px;
+    font-size: 10px;
+    bottom: 0%;
+    position: absolute;
+    z-index: 1;
+    text-align: right;
+  }
+  .big_acced {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Roboto";
+  }
+  .middle_acced {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Roboto";
+  }
+  .text {
+    padding: 5px;
+    color: #b5e6e3;
+    font-weight: 100;
+    font-size: 10px;
+    font-family: Roboto;
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .base_hov .retract {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform-origin: 50% 20%;
+    -webkit-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform-origin: 50% 20%;
+    -moz-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform-origin: 50% 20%;
+    -ms-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform-origin: 50% 20%;
+    transform: scale(1);
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+  }
+  .information-optioins-container {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .carre_couleur {
+    width: 70%;
+    height: 350px;
+    display: inline-block;
+    position: relative;
+  }
+  .fond {
+    position: absolute;
+    left: 30%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .acced {
+    width: 80%;
+    padding: 10px;
+    bottom: 5%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .text {
+    padding: 5px;
+    color: #b5e6e3;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: Roboto;
+    padding-top: 20px;
+  }
+
+  .big_acced {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Roboto";
+  }
+  .middle_acced {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Roboto";
+  }
+}

@@ -1,0 +1,88 @@
+.progress {
+  list-style: none;
+  /* margin-top: 20%; */
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  color: #fafafa;
+  background-color: #dfe3e700;
+  line-height: 10px;
+  /* position: absolute; */
+}
+.progress > li {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 900;
+}
+.progress > li:before {
+  content: attr(data-step);
+  display: block;
+  margin: 0 auto;
+  background: #dfe3e4;
+  width: 3em;
+  height: 3em;
+  text-align: center;
+  margin-bottom: 0.25em;
+  line-height: 3em;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1000;
+}
+.progress > li:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #dfe3e4;
+  width: 100%;
+  height: 0.5em;
+  top: 1.25em;
+  left: 50%;
+  margin-left: 1.5em \9;
+}
+.progress > li:last-child:after {
+  display: none;
+}
+.progress > li.is-complete {
+  color: #2ecc71;
+}
+.progress > li.is-complete:before,
+.progress > li.is-complete:after {
+  color: #fff;
+  background: #2ecc71;
+}
+.progress > li.is-active {
+  color: #3f51b5;
+}
+.progress > li.is-active:before {
+  color: #fff;
+  background: #3f51b5;
+}
+/** * Needed for IE8 */
+.progress__last:after {
+  display: none !important;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 1.5em;
+}
+/* .progress {
+  margin-bottom: 3em;
+} */
+a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* body {
+  text-align: center;
+  color: #444;
+} */
