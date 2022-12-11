@@ -97,9 +97,9 @@ Elpaso is a containerized microservices based project destined to offer a soluti
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=elpaso
     
+   - .env.local: Create a Web Firebase project with localhost/elpaso.zapto.org Authorised domains and generate the SDKs. These will provide all the information for the required fields, apart from  REACT_APP_CLIENT_ID. This field corresponds to the GOOGLE_OAUTH2_CLIENT_ID set in .env.dev
+   
    - firebase-config.json:  Similar to the Google Cloud Storage generation, go to the firebase console to Settings > Service Accounts, generate a new private key and it will be automatically downloaded. Rename it to `firebase-config.json`. For more information, read [here](https://firebase.google.com/docs/admin/setup).
-
-   - .env.local: Create a Web Firebase project and generate the SDKs. These will provide all the information for the required fields, apart from  REACT_APP_CLIENT_ID. This field corresponds to the GOOGLE_OAUTH2_CLIENT_ID set in .env.dev
   
    - .env.sematext: adding Sematext monitoring is not mandatory, especially because it is not a free service. However, if you do wish to add it refer to [this](https://sematext.com/docs/agents/sematext-agent/containers/installation/) tutorial. Otherwise, remove the sematext container from the docker-compose-stack.
       
