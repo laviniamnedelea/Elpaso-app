@@ -35,6 +35,9 @@ Elpaso is a containerized microservices based project destined to offer a soluti
 - **Sematext** - monitoring agent
 - **AWS/Digital Ocean** - IaaS platforms for VMs
 
+## Architecture
+
+<img src="https://i.imgur.com/GTi5xOe.png" alt="architecture" width= "800"/>
 
 # DEMO - check it out [here](https://www.youtube.com/watch?v=cYBhlQmaEG0)
 
